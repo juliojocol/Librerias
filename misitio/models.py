@@ -9,3 +9,6 @@ class Publicacion(models.Model):
 
     def __str__(self):
        return self.producto
+
+    class Meta:
+        verbose_name_plural = 'Publicaciones'
