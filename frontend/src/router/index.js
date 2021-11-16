@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import listar from '@/components/listar'
-import crear from '@/components/crear'
-import actualizar from '@/components/actualizar'
+import Listar from '@/components/Listar'
+import Crear from '@/components/Crear'
+import Actualizar from '@/components/Actualizar'
 
 Vue.use(VueRouter)
 
@@ -10,17 +10,17 @@ const routes = [
   {
     path: '/misitio/listar',
     name: 'Listar',
-    component: listar
+    component: Listar
   },
 {
     path: '/misitio/crear',
-    name: 'Ingresar',
-    component: crear
+    name: 'Crear',
+    component: Crear
   },
   {
-    path: '/misitio/actualizar/:id/:producto/:descripcion/:precio',
+    path: '/misitio/actualizar/',
     name: 'Actualizar',
-    component: actualizar
+    component: Actualizar
   },
 ]
 
