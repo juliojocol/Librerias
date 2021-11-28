@@ -74,3 +74,6 @@ class Mutation(graphene.ObjectType):
     eliminar_publicacion = EliminarPublicacion.Field()
 
 schema = graphene.Schema(query=Query, mutation=Mutation)
+
+
+#Prueba para subir una rama nueva #
